@@ -13,6 +13,8 @@
     /*About*/
     --about-background:#00bdbd;
     --about-head-color:white;
+    --about-name-color:white;
+    --about-text-color:white;
 }
 html,body,#root,.App{
   width: 100%;
@@ -58,11 +60,50 @@ html,body,#root,.App{
 }
 /* components > About > About.js */
 #about-page{
-    width:100%;
-    height:100%;
     background-color:var(--about-background);
+    width:100%;
+    min-height:100%;
+    text-align: center;
 }
 .about-page-header{
-    font-size:33px;
-    color:var(--about-head-color);
+    color: var(--about-head-color);
+    font-size: 60px;
+    margin:0;
+    padding: 1em 0 0 0;
+    text-align: center;
+    font-weight: lighter;
+}
+.about-headshot-wrapper{
+    position: relative;
+    margin-top:3em;
+    text-align: left;
+}
+.about-headshot{
+    width:9em;
+    height:9em;
+    border-radius: 15em;
+    margin-left:5em;
+    display: inline-block;
+}
+.about-name-wrapper{
+    margin: 2em 0 0 3em;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+}
+.about-name-wrapper li{
+    color:var(--about-name-color);
+    font-size:28px;
+    margin-bottom:0.25em;
+    font-weight: lighter;
+}
+.about-text{
+    width: 80%;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    margin-top: 2.5em;
+    color:var(--about-text-color);
 }
