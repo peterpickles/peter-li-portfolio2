@@ -15,6 +15,12 @@
     --about-head-color:white;
     --about-name-color:white;
     --about-text-color:white;
+    /*Experience*/
+    --experience-background: white;
+    --experience-header: #ff675f;
+    /*BulletPoint*/
+    --bulletpoint-date-text: white;
+    --bulletpoint-date-background:  #ff675f;
 }
 html,body,#root,.App{
   width: 100%;
@@ -106,4 +112,34 @@ html,body,#root,.App{
     text-align: left;
     margin-top: 2.5em;
     color:var(--about-text-color);
+}
+
+/* components > Experience > Experience.js */
+#experience-page {
+    min-height: 100%;
+    min-width: 100%;
+    background-color:var(--experience-background);
+}
+
+.experience-header {
+    color: var(--experience-header);
+    text-align: center;
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+/* components > BulletPoint > BulletPoint.js */
+.bullet-point {
+    width: 100%;
+}
+
+.bulletpoint-date {
+    background-color: var(--bulletpoint-date-background);
+    color: var(--bulletpoint-date-text);
+    display: inline-block;
+    padding: 3.5em 0;
+    width: 8em;
+    text-align: center;
+    margin: 0 2em 0 4em;
+    border-radius: 15em;
 }

@@ -5,6 +5,7 @@ import './App.css';
 import Nav from "./components/Nav/Nav.js";
 import Landing from "./components/Landing/Landing.js";
 import About from "./components/About/About.js";
+import Experience from "./components/Experience/Experience.js";
 class App extends Component {
   render() {
     return (
@@ -12,6 +13,7 @@ class App extends Component {
         <Nav />
         <Landing />
         <About />
+        <Experience />
       </div>
     );
   }
