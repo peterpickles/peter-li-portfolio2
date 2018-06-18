@@ -7,9 +7,9 @@ class BulletPoint extends Component {
       <div className="bullet-point">
         <div className="bulletpoint-date">{this.props.date} </div>
 
-        {this.props.title}
-        {this.props.subHead}
-        {this.props.body}
+        <div className="bulletpoint-title">{this.props.title}</div>
+        <div className="bulletpoint-subHead">{this.props.subHead}</div>
+        <div className="bulletpoint-body">{this.props.body}</div >
       </div>
     );
   }
