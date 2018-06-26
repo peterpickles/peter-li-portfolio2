@@ -10,6 +10,7 @@ class BulletPoint extends Component {
         <div className="bulletpoint-title">{this.props.title}</div>
         <div className="bulletpoint-subHead">{this.props.subHead}</div>
         <div className="bulletpoint-body">{this.props.body}</div >
+        <div className="bulletpoint-body-2">{this.props.body}</div >
       </div>
     );
   }
